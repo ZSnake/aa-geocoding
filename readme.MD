@@ -7,4 +7,4 @@
 4. [Also uses the Browser's native Fetch method through a polyfill to make external HTTP requests](https://github.com/github/fetch)
 
 ## Demonstration
-![Gif demonstrating functionality](http://g.recordit.co/sdHfiWKd74.gif)
+![Gif demonstrating functionality](http://g.recordit.co/KFUUepCSxU.gif)
