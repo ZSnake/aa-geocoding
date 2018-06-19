@@ -5,8 +5,7 @@ navigator.geolocation.getCurrentPosition((position) => {
   document.getElementById('coordinates').innerHTML = `The user's coordinates are lat:
   <b>${position.coords.latitude.toFixed(2)}</b> and long: <b>${position.coords.longitude.toFixed(2)}</b>`
   //Uses Googles reverse geocoding to pass in lag/lng and get back the _address_
-  // fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${key}`, {
-  fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=39.4355164,-116.0853246&key=${key}`, {
+  fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${key}`, {
     method: 'GET',
   }).then((response) => {
     if(response.ok){
